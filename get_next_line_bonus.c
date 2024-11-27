@@ -6,7 +6,7 @@
 /*   By: soulaimane <soulaimane@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 09:23:15 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/11/26 10:00:19 by soulaimane       ###   ########.fr       */
+/*   Updated: 2024/11/27 12:02:40 by soulaimane       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,9 @@ char	*get_next_line(int fd)
 	char		*line;
 	size_t		i;
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || BUFFER_SIZE >= 2147483647 || fd > 1024)
+	if (fd < 0 || BUFFER_SIZE <= 0 || fd > 1024)
 		return (NULL);
-	buf = malloc(BUFFER_SIZE + 1);
+	buf = malloc((BUFFER_SIZE * sizeof(char)) + 1);
 	if (buf == NULL)
 		return (free(res[fd]), res[fd] = NULL, NULL);
 	if (res[fd])

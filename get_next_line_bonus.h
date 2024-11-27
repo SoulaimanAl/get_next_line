@@ -6,7 +6,7 @@
 /*   By: soulaimane <soulaimane@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/26 09:23:58 by soulaimane        #+#    #+#             */
-/*   Updated: 2024/11/26 09:24:25 by soulaimane       ###   ########.fr       */
+/*   Updated: 2024/11/27 12:00:00 by soulaimane       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,9 @@
 # include <unistd.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1024
+#  define BUFFER_SIZE 2147483647
 
 # endif
-
-typedef struct	s_counter
-{
-	int	arr;
-}   t_count;
 
 char	*get_next_line(int fd);
 size_t	ft_strlen(const char *s);

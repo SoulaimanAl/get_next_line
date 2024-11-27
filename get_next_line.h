@@ -6,7 +6,7 @@
 /*   By: soulaimane <soulaimane@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/22 14:22:39 by salahian          #+#    #+#             */
-/*   Updated: 2024/11/26 09:24:35 by soulaimane       ###   ########.fr       */
+/*   Updated: 2024/11/26 15:09:40 by soulaimane       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,6 @@
 #  define BUFFER_SIZE 1024
 
 # endif
-
-typedef struct	s_counter
-{
-	int	arr;
-}   t_count;
 
 char	*get_next_line(int fd);
 size_t	ft_strlen(const char *s);
